@@ -232,11 +232,9 @@ article a:hover {
         gap: 0.5rem; /* Espaçamento entre os itens */
     }
 
-    /*
-    .footer { /* Estilos para o rodapé em telas muito pequenas
-        display: none; /* Oculta o rodapé
+    .footer { /* Estilos para o rodapé em telas muito pequenas */
+        display: none; /* Oculta o rodapé */
     }
-    */
 
     button { /* Estilos para o botão em telas muito pequenas */
         margin-top: 1rem; /* Adiciona margem no topo */
