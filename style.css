@@ -148,10 +148,11 @@ article a:hover {
 }
 
 .footer {
-    position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
+    /*position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
     bottom: 0; /* Alinha na parte inferior */
     left: 0; /* Alinha à esquerda */
     width: 100%; /* Largura total */
+    height: 75px;
     color: var(--tertiary-color); /* Cor do texto */
     background-color: var(--bg-color); /* Cor de fundo */
     padding: 15px 20px; /* Espaçamento interno */
