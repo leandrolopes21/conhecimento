@@ -33,12 +33,11 @@ A página consiste em:
 └── style.css         # Folha de estilos
 ```
 
-## 🏃 Como Executar
+<!-- ## 🏃 Como Executar
 
 1. Clone este repositório.
 2. Para uma experiência correta, sirva os arquivos a partir de um servidor web local. Isso é necessário porque a API `fetch` pode ter restrições de segurança (CORS) ao tentar carregar o `data.json` diretamente do sistema de arquivos (`file://`).
    - Uma maneira fácil de fazer isso é usando a extensão **Live Server** no Visual Studio Code.
-3. Abra o arquivo `index.html` no seu navegador através do servidor local.
+3. Abra o arquivo `index.html` no seu navegador através do servidor local. -->
 
----
 *Projeto criado por Leandro Lopes.*

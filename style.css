@@ -156,7 +156,7 @@ article p strong {
 }
 
 article a {
-    color: var(--primary-color); /* Cor do link */
+    color: var(--quarter-color); /* Cor do link */
     text-decoration: none; /* Remove o sublinhado padrão */
     font-weight: 200; /* Peso da fonte */
 }
