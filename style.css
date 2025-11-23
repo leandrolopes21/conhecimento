@@ -13,11 +13,24 @@
     --bg-color-Alt: #3fa6a9; /* Cor de fundo alternativa - baseada Sincro */
 }
 
+html {
+    height: 100%;
+}
+
+main {
+    flex-grow: 1; /* Faz com que o <main> cresça e ocupe o espaço disponível, empurrando o footer para baixo */
+}
+
 body {
     margin: 0; /* Remove a margem padrão do body */
     background: var(--bg-color-Alt); /* Define a cor de fundo usando uma variável */
     color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
     font-family: "Quicksand", sans-serif; /* Define a família da fonte */
+
+    min-height: 100%; /* Garante que o body ocupe no mínimo a altura toda da tela */
+
+    /* display: flex;
+    flex-direction: column; */
 }
 
 header {
