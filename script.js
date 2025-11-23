@@ -2,6 +2,8 @@
 let cardContainer = document.querySelector('.card-container');
 // Seleciona o campo de input usado para a busca.
 let campoBusca = document.querySelector('header input');
+// Seleciona o botão de limpar.
+let botaoLimpar = document.querySelector('#botao-limpa');
 
 // Array que irá armazenar os dados carregados do arquivo JSON.
 let dados = [];
@@ -46,11 +48,23 @@ function renderizaCard(dados) {
         // Define o conteúdo HTML do card usando um template literal com os dados do item.
         article.innerHTML = `
             <h2>${dado.nome}</h2>
-            <p>${dado.ano}</p>
+            <p>Data de criação: ${dado.data_criacao}</p>
             <p>${dado.descricao}</p>
+            <p>Tags: ${dado.tags}</p>
             <a href="${dado.link}" target="_blank">Saiba mais</a>`;
 
         // Adiciona o card recém-criado ao contêiner de cards no DOM.
         cardContainer.appendChild(article);
     }
 }
+
+// Função para limpar os resultados da busca e o campo de input.
+function limparBusca() {
+    // Limpa o conteúdo do contêiner de cards.
+    cardContainer.innerHTML = "";
+    // Limpa o valor do campo de busca.
+    campoBusca.value = "";
+}
+
+// Adiciona um ouvinte de evento ao botão 'limpar' que chama a função limparBusca ao ser clicado.
+botaoLimpar.addEventListener('click', limparBusca);

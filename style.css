@@ -8,12 +8,14 @@
     --primary-color: #8ab4f8; /* Cor primária (azul claro) */
     --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
     --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
+    --quarter-color: #2b5394; /* Cor quartenária (azul escuro) */
     --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+    --bg-color-Alt: #3fa6a9; /* Cor de fundo alternativa - baseada Sincro */
 }
 
 body {
     margin: 0; /* Remove a margem padrão do body */
-    background: var(--bg-color); /* Define a cor de fundo usando uma variável */
+    background: var(--bg-color-Alt); /* Define a cor de fundo usando uma variável */
     color: var(--secondary-color); /* Define a cor do texto padrão usando uma variável */
     font-family: "Quicksand", sans-serif; /* Define a família da fonte */
 }
@@ -64,7 +66,8 @@ div input:focus {
     box-shadow: 0 0 0 0.1rem var(--tertiary-color); /* Adiciona uma sombra de caixa para indicar foco */
 }
 
-#botao-busca {
+#botao-busca,
+#botao-limpa {
     padding: 1rem 2rem; /* Espaçamento interno */
     border-radius: 1rem; /* Arredonda as bordas */
     border: none; /* Remove a borda padrão */
@@ -79,13 +82,15 @@ div input:focus {
     border: 1px solid var(--bg-color); /* Adiciona uma borda */
 }
 
-#botao-busca:hover {
+#botao-busca:hover,
+#botao-limpa:hover {
     background-color: var(--primary-color); /* Muda a cor de fundo ao passar o mouse */
     color: var(--bg-color); /* Muda a cor do texto ao passar o mouse */
     box-shadow: 0 0 0 0.1rem var(--primary-color); /* Adiciona uma sombra de caixa */
 }
 
-#botao-busca:active {
+#botao-busca:active,
+#botao-limpa:active {
     transform: scale(0.98); /* Efeito de clique (diminui o tamanho) */
 }
 
@@ -121,7 +126,7 @@ article h2 {
     border-bottom: none; /* Sem borda inferior */
     padding-bottom: 0; /* Sem espaçamento interno inferior */
     margin-bottom: 0.25rem; /* Margem inferior */
-    color: var(--primary-color); /* Cor do texto */
+    color: var(--quarter-color); /* Cor do texto */
 }
 
 article p {
@@ -148,11 +153,10 @@ article a:hover {
 }
 
 .footer {
-    /*position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
+    position: absolute; /* Posicionamento absoluto em relação ao elemento pai posicionado */
     bottom: 0; /* Alinha na parte inferior */
     left: 0; /* Alinha à esquerda */
     width: 100%; /* Largura total */
-    height: 75px;
     color: var(--tertiary-color); /* Cor do texto */
     background-color: var(--bg-color); /* Cor de fundo */
     padding: 15px 20px; /* Espaçamento interno */
