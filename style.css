@@ -211,9 +211,12 @@ article a:hover {
         margin-bottom: 1rem; /* Adiciona margem inferior */
     }
 
-    div input { /* Estilos para o input em telas menores */
-        width: 90vw; /* Largura baseada na largura da viewport */
-        font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    div { /* Estilos para a div do cabeçalho em telas muito pequenas */
+        display: flex; /* Habilita flexbox */
+        flex-direction: column; /* Organiza em coluna */
+        align-items: center; /* Alinha itens ao centro */
+        justify-content: center; /* Centraliza itens */
+        gap: 0.5rem; /* Espaçamento entre os itens */
     }
 
     main { /* Estilos para o main em telas menores */
@@ -222,6 +225,10 @@ article a:hover {
 
     article:hover { /* Estilos para o article em telas menores */
         transform: none; /* Remove o efeito de escala ao passar o mouse */
+    }
+
+    .footer { /* Estilos para o rodapé em telas muito pequenas */
+        display: none; /* Oculta o rodapé */
     }
 }
 
